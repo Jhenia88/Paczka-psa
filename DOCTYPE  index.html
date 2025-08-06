@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paczka Psa — Subskrypcja karmy dla psów</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #4caf50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #4caf50;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: #4caf50;
+      color: white;
+    }
+    .btn {
+      display: inline-block;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      font-size: 1.2em;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      main {
+        margin: 20px;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, select {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Paczka Psa</h1>
+    <p>Karma Twojego psa — zawsze na czas, bez stresu i zapominania!</p>
+  </header>
+  <main>
+    <section>
+      <h2>Jak to działa?</h2>
+      <ul>
+        <li>1. Wybierz rozmiar psa i preferencje karmy</li>
+        <li>2. My przygotujemy i wyślemy paczkę co miesiąc</li>
+        <li>3. Otrzymujesz karmę prosto pod drzwi lub do paczkomatu</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Plany subskrypcji</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Rozmiar psa</th>
+            <th>Cena miesięczna</th>
+            <th>Ilość karmy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mały pies (do 10 kg)</td>
+            <td>59 zł</td>
+            <td>~3 kg</td>
+          </tr>
+          <tr>
+            <td>Średni pies (10-25 kg)</td>
+            <td>69 zł</td>
+            <td>~5 kg</td>
+          </tr>
+          <tr>
+            <td>Duży pies (powyżej 25 kg)</td>
+            <td>79 zł</td>
+            <td>~7 kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Dlaczego my?</h2>
+      <ul>
+        <li>Karma od sprawdzonych producentów</li>
+        <li>Możliwość wstrzymania lub zmiany subskrypcji w dowolnym momencie</li>
+        <li>Darmowa dostawa do paczkomatów InPost</li>
+        <li>Brak długoterminowych zobowiązań</li>
+        <li>Prezent w pierwszej paczce: smakołyk lub zabawka dla psa</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Zamów już dziś!</h2>
+      <form action="https://example.com/submit" method="POST">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" placeholder="Twoje imię" required />
+        <label for="dog-size">Rozmiar psa:</label>
+        <select id="dog-size" name="dog_size" required>
+          <option value="" disabled selected>Wybierz rozmiar</option>
+          <option value="small">Mały pies (do 10 kg)</option>
+          <option value="medium">Średni pies (10-25 kg)</option>
+          <option value="large">Duży pies (powyżej 25 kg)</option>
+        </select>
+        <label for="address">Adres dostawy lub paczkomat:</label>
+        <input type="text" id="address" name="address" placeholder="Adres lub paczkomat InPost" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Twój email" required />
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Numer telefonu" required />
+        <button type="submit" class="btn">Zamów swoją pierwszą paczkę</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    Kontakt: kontakt@paczkapsa.pl
+  </footer>
+</body>
+</html>
